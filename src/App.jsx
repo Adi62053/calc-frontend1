@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { callApi,BASEURL } from './api';
+import { callApi, BASEURL } from './api';
 
 class App extends Component {
   constructor(){
@@ -54,3 +54,5 @@ class App extends Component {
   }
 }
 
+// ✅ Add this line
+export default App;
