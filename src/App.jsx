@@ -9,16 +9,17 @@ class App extends Component {
     this.getResponse = this.getResponse.bind(this);
   }
 
+  // Updated API calls to match backend endpoints
   add(){
     callApi("GET", BASEURL + `add/${this.state.A}/${this.state.B}`, "", this.getResponse);
   }
 
   subtract(){
-    callApi("GET", BASEURL + `subtract/${this.state.A}/${this.state.B}`, "", this.getResponse);
+    callApi("GET", BASEURL + `sub/${this.state.A}/${this.state.B}`, "", this.getResponse);
   }
 
   divide(){
-    callApi("GET", BASEURL + `divide/${this.state.A}/${this.state.B}`, "", this.getResponse);
+    callApi("GET", BASEURL + `div/${this.state.A}/${this.state.B}`, "", this.getResponse);
   }
 
   getResponse(res){
